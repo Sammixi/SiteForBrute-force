@@ -2,7 +2,7 @@
 $servername = "localhost:3309";
 $username = "root";
 $password = "";
-$dbname = "quizz2";
+$dbname = "db_bruteforce";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
