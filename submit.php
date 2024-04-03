@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collecte des data du form
     $pseudo = htmlspecialchars($_REQUEST['pseudo']);
     $password = htmlspecialchars($_REQUEST['password']);
-
+    $password = md5($password);
     if (empty($pseudo) || empty($password)) {
         echo "Tous les éléments sont requis !";
     } else {
