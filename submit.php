@@ -14,7 +14,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             echo "New record created successfully";
-            
+            header("refresh:3; url=login.html");
+            exit; 
         } else {
             echo "Error: " . $stmt->error;
         }
