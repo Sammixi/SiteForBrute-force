@@ -1,4 +1,4 @@
-liste_mdp=['wikipedia', 'google', 'instagram', 'snap', 'RoadToRadiant', 'MarcNulBabyfoot']
+liste_mdp=['wikipedia', 'google', 'instagram', 'snap', 'RoadToRadiant', 'MarcNulAuBabyfoot']
 dico_hashmdp={}
 import hashlib
 def hash2(mdp): 
