@@ -24,7 +24,7 @@
             
         </div>
         <div>
-            <input type="submit" value="Se connecter">
+            <input type="submit" value="S'enregistrer">
         </div>
     </form>
 </body>

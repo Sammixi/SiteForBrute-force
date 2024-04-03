@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             echo "New record created successfully";
+            
         } else {
             echo "Error: " . $stmt->error;
         }
