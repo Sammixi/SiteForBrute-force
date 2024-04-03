@@ -24,6 +24,7 @@ def hash_table(liste):
     '''Fonction qui hash tous les mots de passe de la liste'''
     for k in liste:
         cycle(k)
+    print(dico_hashmdp)
     return 0
 
 def testhash(hash):
@@ -34,7 +35,9 @@ def testhash(hash):
     hashinit=hash
     for k in dico_hashmdp:
         if dico_hashmdp[k]==hash:
-            print(f'Le mot de passe est {k}')
+            print(f'Il faut chercher à partir de la réduction et du hash du mot de passe {k} !')
+            search_mdp(hashinit, k)
+            #print(f'Le mot de passe est {k}')
     for k in range(6):
         mdp=reduce(hash)
         hash=hash2(mdp)
