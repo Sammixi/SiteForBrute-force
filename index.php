@@ -12,7 +12,11 @@
 </header>
 <body>
     
-    <h2>Crée ton mdp</h2>
+
+    <h2>Crée ton mdp </h2>
+
+
+
     <form action="submit.php" method="POST">
         <div>
             <label for="pseudo">Login:</label><br>
