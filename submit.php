@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("ss", $pseudo, $password);
 
         if ($stmt->execute()) {
-            echo "New record created successfully";
+            echo "Votre compte a bien été enregistré :)";
             header("refresh:3; url=login.html");
             exit; 
         } else {
